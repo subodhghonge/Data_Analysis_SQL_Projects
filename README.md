@@ -6,9 +6,9 @@
 <h3>📌 Future Additions</h3>
 <p>✅ More real-world datasets</p>
 
-<h3>Project 1</h3>
+<h1>Project 1</h1>
 <h2>Retail Sales Analysis</h2>
-<h1>Objectives</h1>
+<h3>Objectives</h3>
 <p>1. Set up a retail sales database**: Create and populate a retail sales database with the provided sales data.<br>
    2. Data Cleaning**: Identify and remove any records with missing or null values.<br>
    3. Exploratory Data Analysis (EDA)**: Perform basic exploratory data analysis to understand the dataset.<br>
