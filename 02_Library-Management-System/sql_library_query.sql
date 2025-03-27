@@ -57,3 +57,23 @@ SELECT * FROM members
 WHERE reg_date >= CURRENT_DATE - INTERVAL 180 DAY;
 
 -- Q10. List Employees with Their Branch Manager's Name and their branch details.
+SELECT e1.*, b.manager_id, e2.emp_name as manager
+FROM employees as e1
+JOIN
+branch as b
+ON b.branch_id = e1.branch_id
+JOIN
+employees as e2
+ON b.manager_id = e2.emp_id;
+
+-- Q11. Create a Table of Books with Rental Price Above a Certain Threshold.
+CREATE TABLE expensive_book AS
+SELECT * FROM books
+WHERE rental_price > 7;
+
+-- Q12. Retrieve the List of Books Not Yet Returned.
+SELECT DISTINCT ist.issued_book_name FROM issued_status as ist
+LEFT JOIN
+return_status as rs
+ON rs.issued_id = ist.issued_id
+WHERE rs.return_id IS NULL;
